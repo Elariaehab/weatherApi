@@ -1,0 +1,222 @@
+.navbar-toggler {
+    color: transparent;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    transition: var(--bs-navbar-toggler-transition);
+}
+.navbar-toggler span i {
+    transition: 0.3s;
+}
+.navbar-toggler:hover span i {
+    color: #007B8F !important;
+}
+nav{
+    background-color: #1E202B !important;
+}
+
+
+.logo{
+    width: 70px;
+    height: 40px;
+}
+
+.logo-p{
+    font-size: 11px;
+    line-height: 15px;
+    color: #ffffffb6 !important;
+}
+
+
+
+.my-nav-ul li a{
+    transition: 0.5s;
+}
+.my-nav-ul li:hover a{
+    color: #009AD8 !important;
+}
+
+.my-nav-ul li{
+    transition: 0.3s ease;
+    border: 1px solid transparent;
+    border-radius: 20px 20px 20px 20px;
+}
+.my-nav-ul li:hover{
+    border: 1px solid #009AD8;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    border: 1px solid #009AD8;
+    border-radius: 20px 20px 20px 20px;
+    color: #009AD8 !important;
+
+}
+.container-fluid{
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-color: #1E202B;
+   background-size: cover;
+   background-position: center center;
+   height: 50vh;
+}
+.location-search{
+    background-color: #1E202B;
+    border-radius: 25px 25px 25px 25px !important; 
+    color: #fff;
+
+}
+.location{
+    color: #fff;
+}
+.search-btn{
+    background-color: #009AD8;
+}
+.form-control {
+
+    background-color:#1E202B ;
+    border: 1px solid #1E202B;
+    color: #fff ;
+    border: 1px solid transparent;
+}
+
+.form-control:focus {
+
+    background-color:#1E202B ;
+    border: 0px solid transparent;
+    outline:  transparent !important;
+    box-shadow: none;
+
+}
+.first-day-title{
+    border-radius: 7px 0px 0px 0px;
+    }
+    .first-day{
+        border-radius: 0px 0px 0px 7px;
+    
+    }
+    .third-day-title{
+    border-radius: 0px 7px 0px 0px;
+    }
+    .third-day{
+        border-radius: 0px 0px 7px 0px;
+    
+    }
+    .second-day{
+        background-color: #2a2d3a;
+        color: #BFC1BF;
+    }
+    .second-day-title{
+        background-color: #222530 !important;
+        color: #BFC1BF;
+    }
+    .first-day-title ,.third-day-title{
+        background-color: #2D303D;
+        color: #BFC1BF;
+    }
+    .first-day , .third-day{
+        background-color: #323544;
+        color: #BFC1BF;
+    
+    }
+    .degree{
+        font-size: 50px !important;
+    }
+    .degree-container img{
+        width: 70px;
+        height: 70px;
+    }
+    .card-contant img{
+        width: 22px !important;
+        height: 22px;
+    }
+    .card{
+        border: none;
+        background-color: #262936;
+        color:#BFC1BF;
+    }
+    .card-body{
+        height: 290px;
+    }
+    
+    .down-img{
+        background-color: #262936;
+        margin-bottom: 20%;
+       
+    }
+    footer{
+        background-color: #262936;
+    }
+    
+    .sub-search{
+        width: 65%;
+        color: white;
+    }
+    .form-control{
+        color: white;
+    }
+    .py-1{
+        color: white;
+    }
+    .social i{
+        width: 45px;
+        height: 45px;
+        background-color: #1E202B;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: #007B8F;
+        transition: 0.3s;
+        cursor: pointer;
+    }    
+    .social i:hover{
+        background-color: #009AD8;
+        color: #fff;
+    }
+    footer p{
+        color: #BFC1C8 !important;
+    }
+    @media screen and (max-width:991px)  {
+        .footer-contant{
+            display: flex;
+            flex-direction: column;
+        }
+        .sub-search{
+            width: 95%;
+            margin-bottom: 23px;
+        }
+        
+        footer p{
+            font-size: 14px;
+        }
+        
+        .small-screen-links{
+            background-color: #262936;
+    
+        }
+    }
+    .search-btn {
+        outline: none;
+        cursor: pointer;
+        border: none;
+        padding: 0.9rem 2rem;
+        margin: 0;
+        position: relative;
+        letter-spacing: 0.05rem;
+        font-size: 17px;
+        border-radius: 500px;
+        overflow: hidden;
+        background: #009ad8;
+        color: white !important;
+       }
+       
+       .search-btn span {
+        position: relative;
+        z-index: 10;
+        transition: color 0.4s;
+        font-size: 16px;
+       }
+       
+       .search-btn:hover span {
+        color: #fff !important;
+       }    

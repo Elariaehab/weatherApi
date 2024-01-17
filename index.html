@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Weather</title>
+        <body>
+             <nav class="navbar navbar-expand-lg ">
+        <div class="container py-4">
+            <div class="d-flex navbar-brand ">
+                <div class=" d-flex justify-content-center align-items-center  ">
+                    <img src="images/logo.png" class="logo  " alt="">
+                </div>
+                <div class="text-white  d-flex flex-column justify-content-center align-items-center pt-2 ">
+                    <a class="text-white fw-bolder fs-6 text-decoration-none  " href="#"> Weather</a>
+                    <p class=" fw-lighter text-white-50 logo-p ms-3">tagline goes here</p>
+                </div>
+            
+            </div>
+          <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon d-flex justify-content-center align-items-center">
+              <input type="checkbox" id="checkbox">
+              <label for="checkbox" class="toggle">
+              <div class="bars" id="bar1"></div>
+              <div class="bars" id="bar2"></div>
+              <div class="bars" id="bar3"></div>
+              </label>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse m-3 small-screen-links text-center rounded-4" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0  my-nav-ul gap-2  " >
+              <li class="nav-item ">
+                <a class="nav-link active text-white px-4 py-1" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white px-4 py-1" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white px-4 py-1" href="#">Live cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white px-4 py-1" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link last-link text-white px-4 py-1" href="#">Contact</a>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+    </nav>
+    <div class="container-fluid my-background position-relative">
+      <div class="container pt-5  pb-4">
+          <div class="row g-0  my-weather  py-4">
+            <div class="location-search py-1 px-1 mb-5" >
+              <div class="d-flex location">
+                  <input type="text" class="form-control location-search  " placeholder="Find your location..." id="locationSearch">
+                  <button class="search-btn text-white rounded-pill px-5 py-2  d-flex justify-content-center align-items-center"> <span>Find</span>
+                  </button>
+              </div>
+            </div>
+
+            <div class="row g-0 mt-2 my-row">
+              <div class="col-lg-4">
+                <div class="card ">
+                    <div class="d-flex justify-content-between first-day-title px-3 py-2">
+                        <h2 class="fs-6" id="firstDay">Sunday</h2>
+                        <h2 class="fs-6" id="currentDate">6August</h2>
+                    </div>
+
+                    <div class="first-day p-2 py-5 card-body ">
+                      <h3 class="fs-5 ms-3 me-5 py-2 " id="cities">Cairo</h3>
+                      <div class="d-flex degree-container align-items-center fDayConatct ">
+                        <p class=" fw-bolder text-white degree mx-4" id="temp">35oC</p>
+                        <img src="images/icon-wind.png" id="todayIcon" class="mx-2" alt="">
+                      </div>
+                      <p class="text-blue ms-3" id="condition">Clear</p>
+
+                      <div class="d-flex gap-4 align-items-center card-contant ms-3 mt-4">
+                        <div class=" d-flex" >
+                          <img src="images/icon-umberella.png " class="w-100 me-1 sun-moon" alt="">
+                          <p id="humidityPersent">20%</p>
+                        </div>
+                        <div class=" d-flex ">
+                          <img src="images/icon-wind.png" class="w-100 me-1 " alt="">
+                          <p id="kiloPerHoure">18km/h</p>
+                        </div>
+                        <div class="d-flex ">
+                          <img src="images/icon-compass.png"  class="w-100  me-1" alt="">
+                          <p id="windDirection">East</p>
+                        </div>
+                      </div>
+
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="card ">
+                    <div class="d-flex justify-content-center seconde-day-title px-3 py-2">
+                        <h2 class="fs-6" id="secondDay">Monday</h2>
+                    </div>
+
+                    <div class="second-day p-2 py-4 text-center card-body">
+                      <div class="mt-4 ">
+                        <img src="images/icon-compass.png" id="nextDayIcon" class="sun-moon mb-4" alt="">
+                        <h3 class="text-white fw-bolder" id="nextDayMaxTemp">39.6oC</h3>
+                        <h4 class="fs-6" id="nextDayMinTemp">26.7o</h4>
+                        <p class="text-blue py-4" id="nextDayDesc">Sunny</p>
+                      </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card ">
+                    <div class="d-flex justify-content-center third-day-title px-3 py-2">
+                        <h2 class="fs-6" id="thirdDay">Monday</h2>
+                    </div>
+
+                    <div class="third-day p-2 py-4 text-center card-body">
+                      <div class="mt-4 ">
+                        <img src="images/icon-compass.png" id="thirdDayIcon" class="sun-moon mb-4" alt="">
+                        <h3 class="text-white fw-bolder" id="thirdDayMaxTemp">39.6oC</h3>
+                        <h4 class="fs-6" id="thirdtDayMinTemp">26.7o</h4>
+                        <p class="text-blue py-4" id="thirdDesc">Sunny</p>
+                      </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+      </div>
+  </div>
+  
+<div class="down-img"></div>
+  <footer class="py-5">
+    <div class="container">
+      <div class="d-flex justify-content-between footer-contant">
+          <div class=" d-flex location-search  sub-search py-1 px-1 mx-1">
+            <input type="text" placeholder="Enter your email to Subscribe..." class="form-control location-search  ">
+            <button  class="search-btn text-white rounded-pill px-4 py-2 d-flex justify-content-center align-items-center"> <span >Subscribe</span>
+            </button>
+          </div>
+          <div class="d-flex social text-white gap-1 me-5 mx-2">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-google-plus-g"></i>
+            <i class="fa-brands fa-pinterest"></i>
+          </div>
+      </div>
+      <p class=" mt-4 mx-2">Copyright 2014 Company name. Designed by Themezy. All rights reserved </p>
+
+    </div>
+</footer>
+
+
+
+
+
+ 
+    
+
+
+
+            
+            <script src="js/bootstrap.bundle.min.js"></script>
+            <script src="js/main.js"></script>
+        </body>
+    </head>
+</html>
